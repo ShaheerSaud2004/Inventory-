@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { 
   PlusIcon, 
   MagnifyingGlassIcon,
-  FunnelIcon,
   CubeIcon
 } from '@heroicons/react/24/outline';
 import { itemsAPI } from '../../services/api';

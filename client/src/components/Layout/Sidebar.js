@@ -5,7 +5,6 @@ import {
   CubeIcon, 
   ClipboardDocumentListIcon,
   UsersIcon,
-  BellIcon,
   ChartBarIcon,
   UserIcon,
   CogIcon,
@@ -35,7 +34,6 @@ const Sidebar = ({ isOpen, onClose }) => {
   ];
 
   const canAccessAdmin = user?.role === 'admin' || user?.role === 'manager';
-  const canManageItems = user?.permissions?.canManageItems || user?.role === 'admin';
   const canManageUsers = user?.permissions?.canManageUsers || user?.role === 'admin';
   const canViewAnalytics = user?.permissions?.canViewAnalytics || user?.role === 'admin';
 

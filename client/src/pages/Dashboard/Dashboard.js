@@ -6,8 +6,7 @@ import {
   ClipboardDocumentListIcon, 
   UsersIcon, 
   ExclamationTriangleIcon,
-  ArrowUpIcon,
-  ArrowDownIcon
+  ArrowUpIcon
 } from '@heroicons/react/24/outline';
 import { analyticsAPI } from '../../services/api';
 import LoadingSpinner from '../../components/UI/LoadingSpinner';
@@ -43,7 +42,7 @@ const Dashboard = () => {
     );
   }
 
-  const { overview, recentActivity, topItems, categoryStats } = dashboardData?.data || {};
+    const { overview, recentActivity, topItems } = dashboardData?.data || {};
 
   const stats = [
     {
